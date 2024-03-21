@@ -7,9 +7,9 @@ const about = () => {
       <h1 className=" text-3xl tracking-wider text-pink-400">About Page</h1>
       <p className=" text-xl tracking-normal text-pink-200">
         {" "}
-        This is the about page
+        This is the community page
       </p>
-      <p>This is the about page</p>
+      <p>This is the community page</p>
     </div>
   );
 };
