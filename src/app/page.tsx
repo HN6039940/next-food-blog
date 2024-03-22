@@ -1,12 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
+
+import ImageSlideShow from "@/components/hero-images/Image-SlideShow";
 
 export default function Home() {
   return (
     <>
       <header className=" container mx-auto p-10">
         <div className=" grid grid-cols-2 place-items-center gap-10">
-          <div className=" min-h-72 min-w-72 bg-slate-400"></div>
+          <ImageSlideShow />
+
           <div className=" grid grid-cols-1 gap-10 justify-self-start p-14">
             <div className="  flex flex-col gap-10  text-5xl font-bold tracking-wider text-orange-200">
               <h1>NEXT LEVEL FOOD FOR THE NEXT LEVEL YOU</h1>
