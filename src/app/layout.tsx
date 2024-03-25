@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className=" box-border min-h-dvh bg-gradient-to-tr from-slate-800 via-slate-950 to-orange-600">
+      <body className=" box-border min-h-dvh bg-gradient-to-tr from-slate-800 via-slate-950 to-orange-500">
         {<MainHeader />}
         {children}
       </body>
