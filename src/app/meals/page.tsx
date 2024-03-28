@@ -1,7 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import MealsGrid from "@/components/meals/Meals-grid";
-const MealsPage = () => {
+
+import { getMeals } from "../../../lib/meals";
+
+const MealsPage = async () => {
+  const meals = await getMeals();
+
   return (
     <>
       <header className="container px-20 py-20 text-white">
@@ -19,7 +24,7 @@ const MealsPage = () => {
         </div>
       </header>
       <main className=" container mx-auto px-5">
-        <MealsGrid meals={[]} />
+        <MealsGrid meals={meals} />
       </main>
     </>
   );
